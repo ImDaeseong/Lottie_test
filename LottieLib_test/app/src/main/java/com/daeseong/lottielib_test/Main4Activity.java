@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import com.airbnb.lottie.LottieAnimationView;
 
@@ -36,7 +37,7 @@ public class Main4Activity extends AppCompatActivity {
         lottieAnimationView = (LottieAnimationView)findViewById(R.id.lav);
         lDelay = lottieAnimationView.getDuration() + 2000;
 
-        handler = new Handler();
+        handler = new Handler(Looper.getMainLooper());
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
