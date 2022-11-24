@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lottieios_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YXa-mU-gw6">
+                                <rect key="frame" x="5" y="293" width="404" height="310"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUL-lI-a47">
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="100"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="gJe-7k-Y9m"/>
+                                        </constraints>
+                                        <state key="normal" title="Button1"/>
+                                        <connections>
+                                            <segue destination="5j6-uw-9bf" kind="presentation" id="03E-pc-Pho"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKR-8W-xyd">
+                                        <rect key="frame" x="0.0" y="105" width="404" height="100"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="XdD-qZ-rDd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button2"/>
+                                        <connections>
+                                            <segue destination="WvC-4E-Vws" kind="presentation" id="RvI-ed-7jh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Lj-yh-h5b">
+                                        <rect key="frame" x="0.0" y="210" width="404" height="100"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="yXG-Su-Rfd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button3"/>
+                                        <connections>
+                                            <segue destination="1GN-3H-BAq" kind="presentation" id="9ax-00-ZHE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wUL-lI-a47" secondAttribute="trailing" id="08a-X6-Laz"/>
+                                    <constraint firstItem="wUL-lI-a47" firstAttribute="leading" secondItem="YXa-mU-gw6" secondAttribute="leading" id="mPF-zg-DUN"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YXa-mU-gw6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="MVy-1a-0EO"/>
+                            <constraint firstItem="YXa-mU-gw6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bc1-9z-ugB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXa-mU-gw6" secondAttribute="trailing" constant="5" id="raB-AF-1oP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214" y="94"/>
+        </scene>
+        <!--Item1-->
+        <scene sceneID="MSg-ez-nXp">
+            <objects>
+                <viewController id="5j6-uw-9bf" customClass="Item1" customModule="Lottieios_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uHs-89-f2T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6g-VU-z33" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="10" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2dJ-L7-Bxg"/>
+                                    <constraint firstAttribute="width" constant="100" id="K8C-rs-jmh"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="JHT-ND-AmO" kind="unwind" unwindAction="unwindToVC:" id="NPD-zc-CyB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxC-9A-grX" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="782" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bvh-ni-fUS"/>
+                                    <constraint firstAttribute="width" constant="100" id="jtr-YK-l3F"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="close:" destination="5j6-uw-9bf" eventType="touchUpInside" id="iBG-aS-kjt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F8W-Qn-h6t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F8W-Qn-h6t" firstAttribute="trailing" secondItem="j6g-VU-z33" secondAttribute="trailing" constant="10" id="4Yg-NZ-vYh"/>
+                            <constraint firstItem="F8W-Qn-h6t" firstAttribute="trailing" secondItem="ZxC-9A-grX" secondAttribute="trailing" constant="10" id="5t8-LH-Acg"/>
+                            <constraint firstItem="j6g-VU-z33" firstAttribute="top" secondItem="F8W-Qn-h6t" secondAttribute="top" constant="10" id="83s-hI-Lx4"/>
+                            <constraint firstAttribute="bottom" secondItem="ZxC-9A-grX" secondAttribute="bottom" constant="10" id="MK8-PQ-Dt7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="thQ-gQ-wh0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXu-5D-jas" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="JHT-ND-AmO" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="94"/>
+        </scene>
+        <!--Item2-->
+        <scene sceneID="Tzq-yf-yf3">
+            <objects>
+                <viewController id="WvC-4E-Vws" customClass="Item2" customModule="Lottieios_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eog-Wz-eho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTw-qA-4me" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="10" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dGp-ZD-2oC"/>
+                                    <constraint firstAttribute="width" constant="100" id="lqn-HX-8eQ"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="NEv-Vs-pfq" kind="unwind" unwindAction="unwindToVC:" id="1oI-4T-wAi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwm-1Y-B4A" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="748" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7lq-SW-F49"/>
+                                    <constraint firstAttribute="height" constant="50" id="ASj-00-AW0"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="close:" destination="WvC-4E-Vws" eventType="touchUpInside" id="xXd-gz-lwS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wfl-kX-5Fe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MTw-qA-4me" firstAttribute="top" secondItem="wfl-kX-5Fe" secondAttribute="top" constant="10" id="1Os-XW-PKZ"/>
+                            <constraint firstItem="wfl-kX-5Fe" firstAttribute="trailing" secondItem="jwm-1Y-B4A" secondAttribute="trailing" constant="10" id="6pn-vB-yhd"/>
+                            <constraint firstItem="wfl-kX-5Fe" firstAttribute="trailing" secondItem="MTw-qA-4me" secondAttribute="trailing" constant="10" id="ImR-zl-acF"/>
+                            <constraint firstItem="wfl-kX-5Fe" firstAttribute="bottom" secondItem="jwm-1Y-B4A" secondAttribute="bottom" constant="10" id="TZV-0i-uMP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1p4-AM-V2J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dp-nr-74y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="NEv-Vs-pfq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="94"/>
+        </scene>
+        <!--Item3-->
+        <scene sceneID="mvF-AA-zWf">
+            <objects>
+                <viewController id="1GN-3H-BAq" customClass="Item3" customModule="Lottieios_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Gg-53-gnq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2x-F5-Opq" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="10" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Ky-JT-hs3"/>
+                                    <constraint firstAttribute="width" constant="100" id="KmP-L4-LXa"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <segue destination="AzN-SW-Z1j" kind="unwind" unwindAction="unwindToVC:" id="VxE-Se-h40"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwF-lo-e6L" customClass="ButtonEx" customModule="Lottieios_test" customModuleProvider="target">
+                                <rect key="frame" x="304" y="748" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6aT-8p-tTa"/>
+                                    <constraint firstAttribute="height" constant="50" id="Tq4-TZ-7pe"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="close:" destination="1GN-3H-BAq" eventType="touchUpInside" id="l73-71-RNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FEQ-ZE-zhs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e2x-F5-Opq" firstAttribute="top" secondItem="FEQ-ZE-zhs" secondAttribute="top" constant="10" id="2kk-PU-Afv"/>
+                            <constraint firstItem="FEQ-ZE-zhs" firstAttribute="trailing" secondItem="e2x-F5-Opq" secondAttribute="trailing" constant="10" id="XHd-YP-hiY"/>
+                            <constraint firstItem="FEQ-ZE-zhs" firstAttribute="trailing" secondItem="JwF-lo-e6L" secondAttribute="trailing" constant="10" id="Ze4-BP-cKV"/>
+                            <constraint firstItem="FEQ-ZE-zhs" firstAttribute="bottom" secondItem="JwF-lo-e6L" secondAttribute="bottom" constant="10" id="pTK-Y9-LV7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGG-2A-cd0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YC2-Cd-CfA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AzN-SW-Z1j" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1743" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
