@@ -1,29 +1,19 @@
 import UIKit
-import Lottie
 
 class Item3: UIViewController {
 
-    let animatonView : AnimationView = {
-        
-        let ani = AnimationView(name: "3")
-        ani.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
-        ani.contentMode = .scaleAspectFit
-        ani.loopMode = .loop
-        ani.animationSpeed = 0.5
-        return ani
-    }()
-
+    @IBOutlet weak var item1: itemView!
+    @IBOutlet weak var item2: itemView!
+    @IBOutlet weak var item3: itemView!
+    @IBOutlet weak var item4: itemView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(animatonView)
-        animatonView.center = view.center
-        
-        animatonView.play{ (finish) in
-            self.animatonView.removeFromSuperview()
-            self.view.backgroundColor = .white
-        }
-        
+        item1.play(name: "1")
+        item2.play(name: "2")
+        item3.play(name: "3")
+        item4.play(name: "1")
     }
     
     @IBAction func close(_ sender: Any) {

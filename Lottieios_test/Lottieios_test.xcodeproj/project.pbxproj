@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		29E6C4E70DC9797999F1A749 /* Pods_Lottieios_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CA085622260694BB090A15 /* Pods_Lottieios_test.framework */; };
+		A135CBC129305F7600C03224 /* html in Resources */ = {isa = PBXBuildFile; fileRef = A135CBC029305F7600C03224 /* html */; };
+		A135CBC9293067B800C03224 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = A135CBC6293067B800C03224 /* 3.json */; };
+		A135CBCA293067B800C03224 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = A135CBC7293067B800C03224 /* 2.json */; };
+		A135CBCB293067B800C03224 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = A135CBC8293067B800C03224 /* 1.json */; };
+		A135CBD22930983500C03224 /* Item4.swift in Sources */ = {isa = PBXBuildFile; fileRef = A135CBD12930983500C03224 /* Item4.swift */; };
+		A135CBD62930A06C00C03224 /* itemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A135CBD52930A06C00C03224 /* itemView.swift */; };
 		A1E3948E292EEB2300BE7DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3948D292EEB2300BE7DE0 /* AppDelegate.swift */; };
 		A1E39490292EEB2300BE7DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E3948F292EEB2300BE7DE0 /* SceneDelegate.swift */; };
 		A1E39492292EEB2300BE7DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E39491292EEB2300BE7DE0 /* ViewController.swift */; };
@@ -18,15 +24,18 @@
 		A1E394A8292EF06300BE7DE0 /* Item2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E394A7292EF06300BE7DE0 /* Item2.swift */; };
 		A1E394AB292EF07700BE7DE0 /* Item3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E394AA292EF07700BE7DE0 /* Item3.swift */; };
 		A1E394BF292EFC8900BE7DE0 /* ButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E394BE292EFC8900BE7DE0 /* ButtonEx.swift */; };
-		A1E394C9292F018C00BE7DE0 /* 3.json in Resources */ = {isa = PBXBuildFile; fileRef = A1E394C6292F018C00BE7DE0 /* 3.json */; };
-		A1E394CA292F018C00BE7DE0 /* 2.json in Resources */ = {isa = PBXBuildFile; fileRef = A1E394C7292F018C00BE7DE0 /* 2.json */; };
-		A1E394CB292F018C00BE7DE0 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = A1E394C8292F018C00BE7DE0 /* 1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16D2521B719578AB9098D14A /* Pods-Lottieios_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottieios_test.release.xcconfig"; path = "Target Support Files/Pods-Lottieios_test/Pods-Lottieios_test.release.xcconfig"; sourceTree = "<group>"; };
 		3C66FCBA4332FD8DD045E821 /* Pods-Lottieios_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottieios_test.debug.xcconfig"; path = "Target Support Files/Pods-Lottieios_test/Pods-Lottieios_test.debug.xcconfig"; sourceTree = "<group>"; };
 		59CA085622260694BB090A15 /* Pods_Lottieios_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottieios_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A135CBC029305F7600C03224 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		A135CBC6293067B800C03224 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
+		A135CBC7293067B800C03224 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
+		A135CBC8293067B800C03224 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		A135CBD12930983500C03224 /* Item4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item4.swift; sourceTree = "<group>"; };
+		A135CBD52930A06C00C03224 /* itemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemView.swift; sourceTree = "<group>"; };
 		A1E3948A292EEB2300BE7DE0 /* Lottieios_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottieios_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E3948D292EEB2300BE7DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E3948F292EEB2300BE7DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +48,6 @@
 		A1E394A7292EF06300BE7DE0 /* Item2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item2.swift; sourceTree = "<group>"; };
 		A1E394AA292EF07700BE7DE0 /* Item3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item3.swift; sourceTree = "<group>"; };
 		A1E394BE292EFC8900BE7DE0 /* ButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonEx.swift; sourceTree = "<group>"; };
-		A1E394C6292F018C00BE7DE0 /* 3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 3.json; sourceTree = "<group>"; };
-		A1E394C7292F018C00BE7DE0 /* 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 2.json; sourceTree = "<group>"; };
-		A1E394C8292F018C00BE7DE0 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +100,10 @@
 		A1E3948C292EEB2300BE7DE0 /* Lottieios_test */ = {
 			isa = PBXGroup;
 			children = (
-				A1E394C8292F018C00BE7DE0 /* 1.json */,
-				A1E394C7292F018C00BE7DE0 /* 2.json */,
-				A1E394C6292F018C00BE7DE0 /* 3.json */,
+				A135CBC8293067B800C03224 /* 1.json */,
+				A135CBC7293067B800C03224 /* 2.json */,
+				A135CBC6293067B800C03224 /* 3.json */,
+				A135CBC029305F7600C03224 /* html */,
 				A1E3948D292EEB2300BE7DE0 /* AppDelegate.swift */,
 				A1E3948F292EEB2300BE7DE0 /* SceneDelegate.swift */,
 				A1E39491292EEB2300BE7DE0 /* ViewController.swift */,
@@ -107,7 +114,9 @@
 				A1E394A4292EEFEF00BE7DE0 /* Item1.swift */,
 				A1E394A7292EF06300BE7DE0 /* Item2.swift */,
 				A1E394AA292EF07700BE7DE0 /* Item3.swift */,
+				A135CBD12930983500C03224 /* Item4.swift */,
 				A1E394BE292EFC8900BE7DE0 /* ButtonEx.swift */,
+				A135CBD52930A06C00C03224 /* itemView.swift */,
 			);
 			path = Lottieios_test;
 			sourceTree = "<group>";
@@ -171,11 +180,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E394CA292F018C00BE7DE0 /* 2.json in Resources */,
-				A1E394CB292F018C00BE7DE0 /* 1.json in Resources */,
+				A135CBC9293067B800C03224 /* 3.json in Resources */,
 				A1E3949A292EEB2500BE7DE0 /* LaunchScreen.storyboard in Resources */,
-				A1E394C9292F018C00BE7DE0 /* 3.json in Resources */,
+				A135CBCA293067B800C03224 /* 2.json in Resources */,
 				A1E39497292EEB2500BE7DE0 /* Assets.xcassets in Resources */,
+				A135CBC129305F7600C03224 /* html in Resources */,
+				A135CBCB293067B800C03224 /* 1.json in Resources */,
 				A1E39495292EEB2300BE7DE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,7 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E394AB292EF07700BE7DE0 /* Item3.swift in Sources */,
+				A135CBD22930983500C03224 /* Item4.swift in Sources */,
 				A1E39492292EEB2300BE7DE0 /* ViewController.swift in Sources */,
+				A135CBD62930A06C00C03224 /* itemView.swift in Sources */,
 				A1E3948E292EEB2300BE7DE0 /* AppDelegate.swift in Sources */,
 				A1E394A5292EEFEF00BE7DE0 /* Item1.swift in Sources */,
 				A1E394BF292EFC8900BE7DE0 /* ButtonEx.swift in Sources */,

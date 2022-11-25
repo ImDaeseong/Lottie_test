@@ -5,30 +5,61 @@ class Item2: UIViewController {
     
     let animatonView : AnimationView = {
         
-        let ani = AnimationView(name: "2")
-        ani.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
-        ani.contentMode = .scaleAspectFit
-        ani.loopMode = .loop
-        ani.animationSpeed = 0.5
-        return ani
+        let aniView = AnimationView(name: "2")
+        return aniView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(animatonView)
-        animatonView.center = view.center
+        initLocation()
         
-        animatonView.play{ (finish) in
-            self.animatonView.removeFromSuperview()
-            self.view.backgroundColor = .white
-        }
+        initConstraints()
+        
+        play()
         
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        
+        print(self, #function)
+    }
     
     @IBAction func close(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
     }
+    
+    func initLocation(){
+        
+        view.backgroundColor = .white
+        view.addSubview(animatonView)
+    }
+    
+    func initConstraints(){
+        
+        animatonView.translatesAutoresizingMaskIntoConstraints = false
+        animatonView.widthAnchor.constraint(equalToConstant: 400).isActive = true
+        animatonView.heightAnchor.constraint(equalToConstant: 400).isActive = true
+        animatonView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        animatonView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    func play(){
+        
+        //무한
+        animatonView.loopMode = .loop
+      
+        //실행
+        if( animatonView.isAnimationPlaying == false){
+            
+            animatonView.play{ (finish) in
+                
+                print("animatonview 종료")
+                
+                self.animatonView.removeFromSuperview()
+            }
+        }
+    }
+    
 }

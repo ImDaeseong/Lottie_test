@@ -7,5 +7,4 @@ target 'Lottieios_test' do
 
   # Pods for Lottieios_test
   pod 'lottie-ios'
-
 end
