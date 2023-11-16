@@ -2,7 +2,6 @@ package com.daeseong.lottielib_test
 
 import android.animation.Animator
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 
@@ -10,7 +9,7 @@ class Main2Activity : AppCompatActivity() {
 
     private val tag = Main2Activity::class.java.simpleName
 
-    private var lottieAnimationView: LottieAnimationView? = null
+    private lateinit var lottieAnimationView: LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,45 +27,34 @@ class Main2Activity : AppCompatActivity() {
     private fun init() {
 
         try {
+            lottieAnimationView = findViewById(R.id.lav)
+            lottieAnimationView.apply {
+                setAnimation("2.json")
+                loop(false)
+                playAnimation()
 
-            lottieAnimationView = findViewById<View>(R.id.lav) as LottieAnimationView
-            lottieAnimationView!!.setAnimation("2.json")
-            lottieAnimationView!!.loop(false)
-            lottieAnimationView!!.playAnimation()
+                addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationStart(animator: Animator) {}
 
-            lottieAnimationView!!.addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationEnd(animator: Animator) {
+                        finish()
+                    }
 
-                override fun onAnimationStart(animator: Animator) {
+                    override fun onAnimationCancel(animator: Animator) {}
 
-                }
-
-                override fun onAnimationEnd(animator: Animator) {
-
-                    finish()
-                }
-
-                override fun onAnimationCancel(animator: Animator) {
-
-                }
-
-                override fun onAnimationRepeat(animator: Animator) {
-
-                }
-            })
-
+                    override fun onAnimationRepeat(animator: Animator) {}
+                })
+            }
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
     }
 
     private fun clear() {
-
         try {
-
-            if (lottieAnimationView != null) {
-                lottieAnimationView!!.cancelAnimation()
+            lottieAnimationView.apply {
+                cancelAnimation()
             }
-
         } catch (ex: Exception) {
             ex.printStackTrace()
         }

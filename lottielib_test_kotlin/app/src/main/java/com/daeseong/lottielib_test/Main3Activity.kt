@@ -11,7 +11,7 @@ class Main3Activity : AppCompatActivity() {
 
     private val tag = Main3Activity::class.java.simpleName
 
-    private var lottieAnimationView: LottieAnimationView? = null
+    private lateinit var lottieAnimationView: LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,33 +29,25 @@ class Main3Activity : AppCompatActivity() {
     private fun init() {
 
         try {
+            lottieAnimationView = findViewById(R.id.lav)
+            lottieAnimationView.apply {
+                visibility = View.VISIBLE
+                repeatCount = ValueAnimator.INFINITE
+                speed = 1.0f
+                playAnimation()
 
-            lottieAnimationView = findViewById<View>(R.id.lav) as LottieAnimationView
-            lottieAnimationView!!.visibility = View.VISIBLE
-            lottieAnimationView!!.repeatCount = ValueAnimator.INFINITE
-            lottieAnimationView!!.speed = 1.0f
-            lottieAnimationView!!.playAnimation()
+                addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationStart(animator: Animator) {}
 
-            lottieAnimationView!!.addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationEnd(animator: Animator) {
+                        finish()
+                    }
 
-                override fun onAnimationStart(animator: Animator) {
+                    override fun onAnimationCancel(animator: Animator) {}
 
-                }
-
-                override fun onAnimationEnd(animator: Animator) {
-
-                    finish()
-                }
-
-                override fun onAnimationCancel(animator: Animator) {
-
-                }
-
-                override fun onAnimationRepeat(animator: Animator) {
-
-                }
-            })
-
+                    override fun onAnimationRepeat(animator: Animator) {}
+                })
+            }
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
@@ -64,11 +56,9 @@ class Main3Activity : AppCompatActivity() {
     private fun clear() {
 
         try {
-
-            if (lottieAnimationView != null) {
-                lottieAnimationView!!.cancelAnimation()
+            lottieAnimationView.apply {
+                cancelAnimation()
             }
-
         } catch (ex: Exception) {
             ex.printStackTrace()
         }

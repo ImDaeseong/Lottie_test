@@ -9,15 +9,15 @@ class Main8Activity : AppCompatActivity() {
 
     private val tag = Main8Activity::class.java.simpleName
 
-    private var wbv: WebView? = null
+    private lateinit var wbv: WebView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main8)
 
-        wbv = findViewById<WebView>(R.id.wbv)
-        wbv!!.settings.javaScriptEnabled = true
-        wbv!!.webViewClient = WebViewClient()
-        wbv!!.loadUrl("file:///android_asset/test.html")
+        wbv = findViewById(R.id.wbv)
+        wbv.settings.javaScriptEnabled = true
+        wbv.webViewClient = WebViewClient()
+        wbv.loadUrl("file:///android_asset/test.html")
     }
 }

@@ -3,7 +3,6 @@ package com.daeseong.lottielib_test
 import android.animation.Animator
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 
@@ -11,7 +10,7 @@ class Main5Activity : AppCompatActivity() {
 
     private val tag = Main5Activity::class.java.simpleName
 
-    private var lottieAnimationView: LottieAnimationView? = null
+    private lateinit var lottieAnimationView: LottieAnimationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,35 +36,26 @@ class Main5Activity : AppCompatActivity() {
     private fun init() {
 
         try {
+            lottieAnimationView = findViewById(R.id.lav)
+            lottieAnimationView.apply {
+                setAnimation("3.json")
+                loop(false)
 
-            lottieAnimationView = findViewById<View>(R.id.lav) as LottieAnimationView
-            lottieAnimationView!!.setAnimation("3.json")
-            lottieAnimationView!!.loop(false)
+                Log.e(this@Main5Activity.tag, "init: $duration")
 
-            Log.e(tag, "init:" + lottieAnimationView!!.duration.toString())
+                addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationStart(animator: Animator) {}
 
-            lottieAnimationView!!.addAnimatorListener(object : Animator.AnimatorListener {
+                    override fun onAnimationEnd(animator: Animator) {
+                        Log.e(this@Main5Activity.tag, "onAnimationEnd: $duration")
+                    }
 
-                override fun onAnimationStart(animator: Animator) {
+                    override fun onAnimationCancel(animator: Animator) {}
 
-                }
-
-                override fun onAnimationEnd(animator: Animator) {
-
-                    Log.e(tag,"onAnimationEnd:" + lottieAnimationView!!.duration.toString())
-                }
-
-                override fun onAnimationCancel(animator: Animator) {
-
-                }
-
-                override fun onAnimationRepeat(animator: Animator) {
-
-                }
-
-            })
-
-        } catch (ex: java.lang.Exception) {
+                    override fun onAnimationRepeat(animator: Animator) {}
+                })
+            }
+        } catch (ex: Exception) {
             ex.printStackTrace()
         }
     }
@@ -73,12 +63,9 @@ class Main5Activity : AppCompatActivity() {
     private fun start() {
 
         try {
-
-            val isPlay = lottieAnimationView!!.isAnimating
-            if (!isPlay) {
-                lottieAnimationView!!.playAnimation()
+            if (!lottieAnimationView.isAnimating) {
+                lottieAnimationView.playAnimation()
             }
-
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
@@ -87,12 +74,9 @@ class Main5Activity : AppCompatActivity() {
     private fun stop() {
 
         try {
-
-            val isPlay = lottieAnimationView!!.isAnimating
-            if (isPlay) {
-                lottieAnimationView!!.cancelAnimation()
+            if (lottieAnimationView.isAnimating) {
+                lottieAnimationView.cancelAnimation()
             }
-
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
@@ -101,13 +85,11 @@ class Main5Activity : AppCompatActivity() {
     private fun clear() {
 
         try {
-
-            if (lottieAnimationView != null) {
-                lottieAnimationView!!.removeAllLottieOnCompositionLoadedListener()
-                lottieAnimationView!!.removeAllAnimatorListeners()
-                lottieAnimationView!!.removeAllLottieOnCompositionLoadedListener()
+            lottieAnimationView.apply {
+                removeAllLottieOnCompositionLoadedListener()
+                removeAllAnimatorListeners()
+                removeAllLottieOnCompositionLoadedListener()
             }
-
         } catch (ex: Exception) {
             ex.printStackTrace()
         }
